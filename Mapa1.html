@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Img/freddy.png">
+
+  <!-- Bootstrap & Bootstrap‑icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Mapa.css">
+
+  <title>Freddys MegaWold</title>
+
+</head>
+
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar justify-content-center">
+      
+      <ul class="menu">
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle">
+                MAPA
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="envios.html"><i class="bi bi-truck"></i> Envíos</a></li>
+                  <li><a href="Entregas.html"><i class="bi bi-box2-heart-fill"></i> Entrega</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle">
+                ATRACCIONES
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="bolsas-1.html"><i class="bi bi-bag-heart-fill"></i> Bolsas</a></li>
+                  <li><a href="Maquillaje.html"><i class="bi bi-palette"></i> Maquillaje</a></li>
+                  <li><a href="joyeria.html"><i class="bi bi-gem"></i> Joyeria</a></li>
+                  <li><a href="exclusivos.html"><i class="bi bi-gift-fill"></i> Exclusivos</a></li>
+                  <li><a href="dulces-1.html"><i class="bi bi-hypnotize"></i> Dulces</a></li>
+              </ul>
+          </li>
+          
+          <li class="dropdown">
+            <div class="logo">
+              <a href="index.html">
+                <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
+              </a>
+            </div>
+          </li>
+          
+          <li><a href="contactanos.html"> Contacto</a></li>
+          
+          <!-- Botón de carrito -->
+          <li class="cart">
+              <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
+                  <i class="bi bi-ticket-perforated fs-4"></i>
+                  <span class="cart-count">0</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+ 
+<!-- =====================  MAPA INTERACTIVO (hover)  ===================== -->
+<div class="map-container">
+  <!-- Imagen base del mapa -->
+  <img src="Img/Parque/Mapa_Final.jpg" class="img-fluid" alt="Mapa" />
+
+  <!-- ========= PIN 1 ========= -->
+  <div class="pin-wrapper punto" style="top:50%; left:0%;">
+   <!-- <img src="Img/Tlacuacha.png" class="pin-img" alt="Pin 1" /> -->
+    <div class="pin-overlay">
+      <img src="Img/Tlacuacha_letra.png" class="overlay-img" alt="Mensaje 1" />
+    </div>
+  </div>
+
+  <!-- ========= PIN 2 ========= -->
+  <div class="pin-wrapper punto" style="top:81%; left:27%;">
+   <!-- <img src="Img/Tlacuacha.png" class="pin-img" alt="Pin 2" />  -->
+    <div class="pin-overlay">
+      <img src="Img/Tlacuacha_letra2.png" class="overlay-img" alt="Mensaje 2" />
+    </div>
+  </div>
+</div>
+<!-- ===================================================================== -->
+
+
+
+  <!-- ========== MODALES DE LOS PINES ========== -->
+  <!-- Modal Pin 1 -->
+  <div class="modal fade" id="modalPin1" tabindex="-1" aria-labelledby="modalPin1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPin1Label">Área de Joyería</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Aquí encontrarás aretes, anillos y collares únicos. 💍✨
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Pin 2 -->
+  <div class="modal fade" id="modalPin2" tabindex="-1" aria-labelledby="modalPin2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPin2Label">Zona de Dulces</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¡Dulces asiáticos, gomitas y mucho más! 🍬🍭
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------------- -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <!-- … (tu footer tal cual) … -->
+  </footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelectorAll('.pin-img').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.dataset.target;
+      const overlay = document.getElementById(targetId);
+
+      // Ocultar todos los overlays primero
+      document.querySelectorAll('.pin-overlay').forEach(o => {
+        if (o !== overlay) o.classList.remove('show');
+      });
+
+      // Alternar el overlay clicado
+      overlay.classList.toggle('show');
+    });
+  });
+
+  // Opcional: cerrar al hacer clic fuera del mapa
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.map-container')) {
+      document.querySelectorAll('.pin-overlay').forEach(o => o.classList.remove('show'));
+    }
+  });
+</script>
+
+</body>
+</html>

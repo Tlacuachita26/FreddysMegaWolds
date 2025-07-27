@@ -1,0 +1,26 @@
+/* Fuente Questrial*/
+@font-face {
+    font-family: 'Questrial';
+    src: url('./fonts/Questrial-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.TitulosIndxex {
+    color: white;
+    letter-spacing: 5px; /* Ajusta el valor según lo que necesites */
+}
+
+.TextoQuestrial {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-justify: justify;
+}
+
+.TextoQuestrial li {
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    text-justify: justify;
+}
+/* Baner superior */
+

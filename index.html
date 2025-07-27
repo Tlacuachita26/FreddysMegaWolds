@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="Img/Nueva tlauacha_Blanca.png">
+    <link rel="icon" type="image/png" href="Img/Parque/IconPage.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
@@ -13,23 +13,22 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Elementos.css">
+    <link rel="stylesheet" href="index.css">
 
-    <title>Tlacuachita Shop</title>
+
+
+    <title>GlamRock Park</title>
 </head>
 
 <body> 
-  <nav class="navbar">
-      <div class="logo">
-          <img src="Img/Tlacuacha_letra.png" alt="Logotipo" />
-      </div>
+  <nav class="navbar justify-content-center">
+      
       <ul class="menu">
-          <li><a href="index.html">Inicio</a></li>
-          
           <!-- Íconos para "Entrega y Envío" -->
           <li class="dropdown">
               <a href="" class="dropdown-toggle">
-                  <i class="bi bi-truck"></i> <!-- Icono de camión -->
-                  Entrega y envio
+                MAPA
               </a>
               <ul class="dropdown-menu">
                   <li><a href="envios.html"><i class="bi bi-truck"></i> Envíos</a></li>
@@ -40,8 +39,7 @@
           <!-- Íconos para "Productos" -->
           <li class="dropdown">
               <a href="" class="dropdown-toggle">
-                  <i class="bi bi-handbag-fill"></i> <!-- Icono de bolsa -->
-                  Productos
+                ATRACCIONES
               </a>
               <ul class="dropdown-menu">
                   <li><a href="bolsas-1.html"><i class="bi bi-bag-heart-fill"></i> Bolsas</a></li>
@@ -52,12 +50,20 @@
               </ul>
           </li>
           
-          <li><a href="contactanos.html"><i class="bi bi-envelope-heart-fill"></i> Contacto</a></li>
+          <li class="dropdown">
+            <div class="logo">
+              <a href="index.html">
+                <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
+              </a>
+            </div>
+          </li>
+          
+          <li><a href="contactanos.html"> Contacto</a></li>
           
           <!-- Botón de carrito -->
           <li class="cart">
               <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
-                  <img src="Img/IconCarrito.png" alt="Carrito" class="cart-icon">
+                  <i class="bi bi-ticket-perforated fs-4"></i>
                   <span class="cart-count">0</span>
               </a>
           </li>
@@ -73,7 +79,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    Actualmente no hay productos en tu carrito. ✨¡Agrega algunos productos para comprar!✨
+                    Actualmente no hay Tickets en tu carrito. ✨¡Agrega algunos Tickets para comprar!✨
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -82,172 +88,162 @@
         </div>
     </div>
 
+    <!-- Imagen de banner superior con ola SVG debajo -->
+    <div class="banner-section position-relative">
+      <!-- Imagen responsiva -->
+      <img src="Img/Parque/BANNER GLAMROCK.png" class="img-fluid w-100 banner-img" alt="Banner Parque">
 
-    <!-- Carrusel de imagenes-->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <img src="./Img/Carrusel/ProductosCarrusel1.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="./Img/Carrusel/ProductosCarrusel2.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel3.png" class="d-block w-100" alt="Producto_Carrusel   ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel4.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel5.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel6.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel7.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/Carrusel/ProductosCarrusel8.jpeg" class="d-block w-100" alt="Producto_Carrusel  ">
-          </div>
-        </div>
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-
-    <!-- Banner de la segunda sección -->
-    <div class="seccion-banner" style="background-image: url('Img/Patrones/Baner_Principal.png');">
-        <h1 class="banner-titulo">❤️‍🔥OFERTAS🔥</h1>
+      <!-- Ola inferior -->
+      <svg class="wave-bottom position-absolute bottom-0 start-0 w-100" viewBox="0 0 1440 320" preserveAspectRatio="none" style="height: 100px;">
+               <path fill="#442b86" fill-opacity="1" d="M0,0L26.7,10.7C53.3,21,107,43,160,85.3C213.3,128,267,192,320,208C373.3,224,427,192,480,160C533.3,128,587,96,640,117.3C693.3,139,747,213,800,202.7C853.3,192,907,96,960,85.3C1013.3,75,1067,149,1120,170.7C1173.3,192,1227,160,1280,133.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+      </svg>
     </div>
-    
 
-    <!-- Sección del Catálogo -->
-    <section id="catalogo" class="catalogo">
-        <!-- <h1 class="titulo">Productos Nuevos</h1> -->
-        <div class="productos">
-            <!-- Producto 1 -->
-            <div class="producto">
-                <img src="Img/Productos/Aretes de acero.jpeg" alt="ARETES DE ACERO" class="producto-imagen">
-                <h2 class="producto-titulo">Aretes de acero</h2>
-                <p class="producto-precio">$70 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 2 -->
-            <div class="producto">
-                <img src="Img/Productos/bolsakiplin.jpeg" alt="Bolsa Kiplin" class="producto-imagen">
-                <h2 class="producto-titulo">Bolsa Kiplin</h2>
-                <p class="producto-precio">$400 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 3 -->
-            <div class="producto">
-                <img src="Img/Productos/ramune.jpeg" alt="Ramune" class="producto-imagen">
-                <h2 class="producto-titulo">Ramune de varios sabores</h2>
-                <p class="producto-precio">$70 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 4 -->
-            <div class="producto">
-                <img src="Img/Productos/anillo.jpeg" alt="Anillo de acero" class="producto-imagen">
-                <h2 class="producto-titulo">Anillo de acero</h2>
-                <p class="producto-precio">$90 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 5 -->
-            <div class="producto">
-                <img src="Img/Productos/papitaspanda.jpeg" alt="Dulce Asiático" class="producto-imagen">
-                <h2 class="producto-titulo">papitas de panda</h2>
-                <p class="producto-precio">$20 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 6 -->
-            <div class="producto">
-                <img src="Img/Productos/Steve adden.jpeg" alt="Cartera" class="producto-imagen">
-                <h2 class="producto-titulo">cartera steve madden</h2>
-                <p class="producto-precio">$200 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 7 -->
-            <div class="producto">
-                <img src="Img/Productos/Mariposa.jpeg" alt="pinzas" class="producto-imagen">
-                <h2 class="producto-titulo">pinzas de flor y mariposa</h2>
-                <p class="producto-precio">$30 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
-
-            <!-- Producto 8 -->
-            <div class="producto">
-                <img src="Img/Productos/carterabimbaylola.jpeg" alt="cartera bimba y lola" class="producto-imagen">
-                <h2 class="producto-titulo">catera bimba y lola</h2>
-                <p class="producto-precio">$200 MXN</p>
-                <button class="btn">Agregar al carrito</button>
-            </div>
+    <!-- SOBRE GLAMROCK PARK -->
+    <section class="container my-5" id="sobre-parque">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-4 TitulosIndxex" style="color: white;">Bienvenidos a Glamrock Park</h2>
+          <p class="TextoQuestrial">
+            Glamrock Park es un parque temático lleno de magia, luces y diversión protagonizado por nuestros amigos Freddy, Roxanne, Monty y Chica junto a su inseparable cupcake. Vive la adrenalina con montañas rusas inspiradas en Monty, shows musicales con Freddy, zonas interactivas con Roxanne, y deliciosas estaciones de comida decoradas con el estilo encantador de Chica.
+          </p>
+          <p class="TextoQuestrial">
+            Descubre zonas exclusivas, atracciones sorpresas con personajes como Sundrop, Moondrop y DJ Music Man. ¡Ideal para toda la familia!
+          </p>
         </div>
+        <div class="col-md-6">
+          <img src="Img/Parque/Atracciones/GOLF.jpg" alt="Atracciones del parque" class="img-fluid rounded">
+        </div>
+      </div>
     </section>
 
-    <!-- Banner de la tercera sección -->
-    <div class="seccion-banner" style="background-image: url('Img/Patrones/Baner_Principal.png');">
-        <h1 class="banner-titulo">🩷REFERENCIAS🩷</h1>
+<!-- FOTOS DEL PARQUE -->
+<section class="container my-5">
+  <h2 class="text-center mb-4" style="color: white;">Galería del Parque</h2>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <img src="Img/Parque/Atracciones/Gator_Golf.webp" class="img-fluid rounded" alt="Foto 1 del parque">
     </div>
-	
-	<div class="row row-cols-1 row-cols-md-3 g-4">
-  <div class="col">
-    <div class="card h-100">
-      <img src="Img/Productos/manita.jpeg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">salviart1</h5>
-        <p class="card-text">El mejor lugar para adquirir y encontrar los mejores detalles para esa persona especial.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">24 de julio</small>
-      </div>
+    <div class="col-md-4">
+      <img src="Img/Parque/Atracciones/RoxanneGoKartTrack.webp" class="img-fluid rounded" alt="Foto 2 del parque">
+    </div>
+    <div class="col-md-4">
+      <img src="Img/Parque/Atracciones/MontyMontaña.webp" class="img-fluid rounded" alt="Foto 3 del parque">
     </div>
   </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="Img/Productos/cartera.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">~Nini</h5>
-        <p class="card-text">Muchas gracias, me hiciste un parote&nbsp;</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">15 de septiembre</small>
+</section>
+
+<!-- CONOCE MÁS A LOS PERSONAJES -->
+<section class="container my-5">
+  <div class="text-center">
+    <h2 class="mb-4" style="color: white;">Conoce a los Personajes</h2>
+    <a href="personajes.html">
+      <img src="Img/Parque/Personajes/FNF.png" class="img-fluid rounded " style="max-width: 900px; cursor:pointer;" alt="Conoce a los personajes">
+    </a>
+    <p class="mt-2 TextoQuestrial">Haz clic en la imagen para conocer más sobre nuestros personajes.</p>
+  </div>
+</section>
+
+<!-- MAPA INTERACTIVO CON FREDY Y SONIDO EN LA NARIZ -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <div class="magnifier-container">
+        <img id="mapZoom" src="Img/Parque/Mapa_Final.png" alt="Mapa" class="img-fluid map-img" >
+        <div id="magnifier"></div>
+        <p class="text-center mt-3">
+          <a href="mapa.html" class="btn btn-outline-primary">Ver Mapa Completo</a>
+        </p>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="Img/Productos/papas.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Carito</h5>
-        <p class="card-text">Mil gracias Ale🫶🏻</p>
+    <div class="col-md-5 text-center position-relative">
+      <div style="position: relative; display: inline-block;">
+        <img id="freddyImg" src="Img/Parque/Fredy_caminando.png" class="img-fluid" alt="Freddy"">
+        <audio id="narizAudio" src="/Img/Parque/Sounds/Nariz.mp3"></audio>
+        <button onclick="document.getElementById('narizAudio').play()" 
+                style="position: absolute; top: 35%; left: 39%; width: 30px; height: 30px; background-color: transparent; border: none;">
+        </button>
       </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">21 de noviembre</small>
-      </div>
+      <p class="mt-2 TextoQuestrial">¡Haz clic en la nariz de Freddy!</p>
+    </div>
+</section>
+
+<!-- PLANEA TU VISITA -->
+<section class="container my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2 class="fw-bold mb-4" style="color: white;">Planea tu visita</h2>
+      <p class="TextoQuestrial">
+        ¿Cumpleaños? ¿Fiesta escolar? ¿Día inolvidable en familia? Glamrock Park tiene todo para hacer de tu visita una experiencia épica. Reserva áreas temáticas, paquetes especiales para grupos y más.
+      </p>
+      <ul class="TextoQuestrial">
+        <li>🎉 Fiestas infantiles temáticas</li>
+        <li>🎟️ Paquetes familiares</li>
+        <li>🚌 Visitas escolares guiadas</li>
+        <li>🎤 Shows personalizados</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <img src="Img/Parque/Atracciones/SuperStarDayCare.png" class="img-fluid rounded" alt="Fiesta en el parque">
     </div>
   </div>
-</div>
-<div class="image-container">
-    <img src="Img/Productos/GRITANDO.png" alt="Descripción de la imagen">
-</div>
-</body>
+</section>
+
+<!-- VIDEOS DEL PARQUE -->
+<section class="container my-5">
+  <h2 class="text-center mb-4" style="color: white;">🎥 Experiencias en Glamrock Park</h2>
+  <div class="row g-4">
+    <div class="col-md-6">
+      <video class="w-100 rounded" controls>
+        <source src="videos/video1.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+    <div class="col-md-6">
+      <video class="w-100 rounded" controls>
+        <source src="videos/video2.mp4" type="video/mp4">
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- SECCIÓN DE IMAGEN CON ZOOM -->
+<section class="container my-5 ">
+  <div class="row">
+    <!-- 🗺️ Columna: Mapa con zoom al mouse -->
+    <div class="col-md-7">
+      <div class="magnifier-container">
+        <img id="mapZoom" src="Img/Parque/Mapa.jpg" alt="Mapa" class="img-fluid map-img">
+        <div id="magnifier"></div>
+      </div>
+      <p class="text-center mt-3">
+        <a href="mapa.html" class="btn btn-outline-primary">Ir al mapa completo</a>
+      </p>
+    </div>
+
+    <!-- 🧍‍♂️ Columna: Personaje -->
+    <div class="col-md-5 text-center">
+      <img src="Img/Parque/Fredy_caminando.png" class="img-fluid" alt="Personaje">
+      <audio id="miAudio" src="/Img/Parque/Sounds/Nariz.mp3"></audio>
+      <button onclick="document.getElementById('miAudio').play()">Reproducir sonido</button>
+    </div>
+
+  </div>
+</section>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#000000" fill-opacity="1 " d="M0,96L26.7,106.7C53.3,117,107,139,160,133.3C213.3,128,267,96,320,106.7C373.3,117,427,171,480,160C533.3,149,587,75,640,42.7C693.3,11,747,21,800,48C853.3,75,907,117,960,144C1013.3,171,1067,181,1120,170.7C1173.3,160,1227,128,1280,106.7C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+
+  </path>
+</svg>
+
 
 <footer class="footer">
     <div class="footer-container">
+      
         <!-- Redes sociales -->
         <div class="footer-section">
             <h3>Síguenos en redes sociales</h3>
@@ -267,13 +263,13 @@
         <!-- Información de contacto -->
         <div class="footer-section">
             <h3>Contacto</h3>
-            <p>Email: <a href="mailto:contacto@ejemplo.com">TlacuachitaShop@gmail.com</a></p>
+            <p style="color: white;">Email: <a href="mailto:contacto@ejemplo.com">FreddyMG@gmail.com</a></p>
             <p>Teléfono: <a href="tel:+52 56 1547 2694">+52 56 1547 2694</a></p>
             <p>Ciudad de México, CDMX</p>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 Tlacuachita Shop. Todos los derechos reservados.</p>
+        <p>&copy; 2025 FREDDY MEGA WORLD. Todos los derechos reservados.</p>
     </div>
 </footer>
 
@@ -284,3 +280,30 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+<script>
+  const magnifier = document.getElementById("magnifier");
+  const image = document.getElementById("mapZoom");
+
+  const zoom = 2; // Aumenta para más zoom
+
+  image.addEventListener("mousemove", function (e) {
+    const rect = image.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const bgX = -x * zoom + magnifier.offsetWidth / 2;
+    const bgY = -y * zoom + magnifier.offsetHeight / 2;
+
+    magnifier.style.backgroundImage = `url('${image.src}')`;
+    magnifier.style.backgroundSize = `${image.width * zoom}px ${image.height * zoom}px`;
+    magnifier.style.backgroundPosition = `${bgX}px ${bgY}px`;
+
+    magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
+    magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
+    magnifier.style.display = "block";
+  });
+
+  image.addEventListener("mouseleave", function () {
+    magnifier.style.display = "none";
+  });
+</script>

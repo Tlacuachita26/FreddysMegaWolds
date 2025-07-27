@@ -1,7 +1,7 @@
-/* Fuente Font Yuruka */
+/* Fuente Font Arco */
 @font-face {
-    font-family: 'Yuruka';
-    src: url('./fonts/fot-yuruka-std.ttf') format('truetype');
+    font-family: 'Arco';
+    src: url('./fonts/arco/ARCO.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,10 +9,10 @@
 
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arco', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f3f0eb;
+    background-color: #442B86;
 }
 
 /* Barra de navegación */
@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f8bbd0 ;
+    background-color: #442B86 ;
     padding: 0.5rem 1rem;
 }
 
@@ -31,7 +31,7 @@ body {
 
 .menu {
     list-style: none;
-    font-family: Yuruka;
+    font-family: Arco;
     margin: 0;
     padding: 0;
     display: flex;
@@ -49,10 +49,13 @@ body {
 }
 
 .menu a:hover {
-    color: #f48fb1; /* Cambiar color del texto al pasar el ratón */
+    color: #0CC1DF; /* Cambiar color del texto al pasar el ratón */
     transition: all 0.3s ease; 
 }
 
+.logo img:hover {
+    transform: scale(1.15); /* Aumenta el tamaño al pasar el cursor */
+}
 
 /* Estilo para el icono del carrito */
 .cart {
@@ -70,9 +73,9 @@ body {
 /* Número de productos en el carrito */
 .cart-count {
     position: absolute;
-    top: -5px; 
-    right: -5px; 
-    background-color: rgb(228, 30, 96);
+    top: -4px; 
+    right: -4px; 
+    background-color: #E52125;
     color: white;
     border-radius: 50%;
     padding: 2px 6px;
@@ -133,15 +136,15 @@ body {
 }
 
 .modal-header {
-    background-color: #f8d7da; /* Color de fondo del modal */
+    background-color: #0CC1DF; /* Color de fondo del modal */
 }
 
 .modal-title {
-    color: #721c24; /* Color del título */
+    color: #442B84; /* Color del título */
 }
 
 .modal-body {
-    color: #721c24; /* Color del texto */
+    color: #442B84; /* Color del texto */
 }
 
 
@@ -268,7 +271,7 @@ body {
 
 /* Estilo general del footer */
 .footer {
-    background-color: #3b3535;
+    background-color: #000000;
     color: white;
     padding: 2rem 1rem;
     font-family: Arial, sans-serif;
@@ -288,10 +291,10 @@ body {
     min-width: 200px;
 }
 
-.footer-section h3 {
+.footer-section h3 p{
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: #f48fb1;
+    color: #9c888f;
 }
 
 .footer-section p, .footer-section a {
@@ -470,5 +473,17 @@ body {
         width: 30px; /* Aumenta el tamaño del carrito en móviles */
         height: 30px;
     }
+
+    
+
+
+
+
+
+
+
+
+
+
 }
 

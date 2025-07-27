@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="Img/freddy.png">
+
+  <!-- Bootstrap & Bootstrap‑icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Mapa.css">
+
+
+  <title>Freddys MegaWold</title>
+
+</head>
+
+<body>
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar justify-content-center">
+      
+      <ul class="menu">
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle">
+                MAPA
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="envios.html"><i class="bi bi-truck"></i> Envíos</a></li>
+                  <li><a href="Entregas.html"><i class="bi bi-box2-heart-fill"></i> Entrega</a></li>
+              </ul>
+          </li>
+
+          <li class="dropdown">
+              <a href="" class="dropdown-toggle">
+                ATRACCIONES
+              </a>
+              <ul class="dropdown-menu">
+                  <li><a href="bolsas-1.html"><i class="bi bi-bag-heart-fill"></i> Bolsas</a></li>
+                  <li><a href="Maquillaje.html"><i class="bi bi-palette"></i> Maquillaje</a></li>
+                  <li><a href="joyeria.html"><i class="bi bi-gem"></i> Joyeria</a></li>
+                  <li><a href="exclusivos.html"><i class="bi bi-gift-fill"></i> Exclusivos</a></li>
+                  <li><a href="dulces-1.html"><i class="bi bi-hypnotize"></i> Dulces</a></li>
+              </ul>
+          </li>
+          
+          <li class="dropdown">
+            <div class="logo">
+              <a href="index.html">
+                <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
+              </a>
+            </div>
+          </li>
+          
+          <li><a href="contactanos.html"> Contacto</a></li>
+          
+          <!-- Botón de carrito -->
+          <li class="cart">
+              <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
+                  <i class="bi bi-ticket-perforated fs-4"></i>
+                  <span class="cart-count">0</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+
+ 
+<!-- =====================  MAPA INTERACTIVO (hover)  ===================== -->
+<div class="map-container">
+  <!-- Imagen base del mapa -->
+  <img src="Img/Parque/Mapa_Final.png" class="img-fluid" alt="Mapa" />
+
+  <!-- ========= ENTRADA Y SALIDA ========= -->
+ 
+  <!-- ENTRADA  -->
+  <div class="pin-wrapper pin-sm" style="top:76%; left:39vw;">
+    <div class="pin-overlay overMid">
+      <img src="/Img/Parque/PingMap/Entrada.png" class="pin-img img-medio" alt="Pin 2" />
+      <p class="TextPing"> Entrada </p>
+    </div>
+  </div>
+
+  <!-- ENTRADA  -->
+  <div class="pin-wrapper pin-sm" style="top:94%; left:56.5vw;">
+    <div class="pin-overlay overMid">
+      <img src="/Img/Parque/PingMap/Salida.png" class="pin-img img-medio" alt="Pin 2" />
+      <p class="TextPing"> Salida </p>
+    </div>
+  </div>
+
+  <!-- ========= PIN ESTACIONAMIENTO ========= -->
+
+  <!--ESTACIONAMIENTO A  -->
+  <div class="pin-wrapper" style="top:77%; left:27%;">
+    <div class="pin-overlay">
+      <img src="/Img/Parque/PingMap/Estacionamiento.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing"> Estacionamiento PARTE A espacioso</p>
+    </div>
+  </div>
+
+  <!--ESTACIONAMIENTO B  -->
+  <div class="pin-wrapper" style="top:97%; left:26.5%;">
+    <div class="pin-overlay">
+      <img src="/Img/Parque/PingMap/Estacionamiento.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing"> Estacionamiento PARTE B espacioso</p>
+    </div>
+  </div>
+    
+  <!--ESTACIONAMIENTO C  -->
+
+  <div class="pin-wrapper" style="top:92%; left:40%;">
+    <div class="pin-overlay">
+      <img src="/Img/Parque/PingMap/Estacionamiento.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing"> Estacionamiento PARTE C espacioso</p>
+    </div>
+  </div>
+
+  <!-- ========= PIN Taquilla ========= -->
+
+  <div class="pin-wrapper" style="top:39vw; left:35vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img " alt="Pin 2" />
+      <p class="TextPingBack"> Taquilla </p>
+    </div>
+  </div>
+
+  <div class="pin-wrapper" style="top:43vw; left:42.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing"> Taquilla </p>
+    </div>
+  </div>
+
+    <!-- ========= GRANDES ATRACCIONES ========= -->
+
+    <!-- 1 - BARCO PIRATA DE FOXY --> 
+
+   <div class="pin-wrapper pin-sm" style="top:12vw; left:24.8vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing">
+        <strong>Barco Pirata de Foxy</strong><br><br>
+        <span style="color:#fff7f7;">
+          ¡La cueva pirata es el refugio
+          donde Foxy y su tripulación se
+          alistan para deslumbrar con su
+          espectáculo en los siete mares!
+        </span><br>
+      </p>
+    </div>
+  </div>
+
+    <!-- 2 - MONTY SKYE -->
+
+   <div class="pin-wrapper pin-sm" style="top:13.7vw; left:36.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong></strong><br>
+        <span style="color:#4c00ff; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>  
+
+    <!-- 3 - MONTY GATOR GOLF -->
+
+   <div class="pin-wrapper pin-sm" style="top:10.3vw; left:44vw;">
+    <div class="pin-overlay  overMid">
+      <!-- <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" /> -->
+     <p class="TextPing">
+      <!--  <strong>Monty's Gator Attack</strong><br>  -->
+        <span style="color:#b2b3ac; font-weight:bold;">
+          Un golf super divertido para los
+          más diestros, ¡disfruta de las
+          traviesas trampas de arena!
+          Rodeado de la fauna que este
+          parque adora, protege y le da ese
+          toque mágico.
+        </span><br>
+      </p>
+    </div>
+  </div>
+
+    <!-- 4 - SUPERTARSTAR DAYCARE PICK UP -->
+
+   <div class="pin-wrapper pin-sm" style="top:20.1vw; left:31.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <span style="color:#ff006a; font-weight:bold;">
+          ¡Moondrop y Sundrop están listos
+          para cuidar y entretener a los mini
+          rockstars con un día estelar!
+        </span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- 5 - MONTYS GATOR ATTACK -->
+
+   <div class="pin-wrapper pin-sm" style="top:18.5vw; left:42.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#7a183e; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#1395d1;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+
+  <!-- 6 CUPCAKE WHEEL FORTUNE -->
+
+   <div class="pin-wrapper pin-sm" style="top:9.50vw; left:56.9vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#5d3d66; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- 7 FAZER BLAST -->
+  
+  <div class="pin-wrapper pin-sm" style="top:23.20vw; left:86.4vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <p class="TextPing">
+            <strong>FazerBlast</strong><br>
+            <span style="color:#d2d3d3;">
+              ¡Protege la galaxia del ejército de
+              Vanny en el Fazer Blast, una arena
+              neón donde la acción no para! Solo
+              tú puedes vencer a Vanny con un
+              poco de ayuda de los
+              animatrónicos. ¿Estás preparado
+              para el desafío?
+            </span><br>
+          </p>
+    </div>
+  </div> 
+
+  <!-- 8 VANNY INVASOR -->
+
+    <div class="pin-wrapper pin-sm" style="top:28.11vw; left:94.3vw;">
+      <div class="pin-overlay  overMid">
+          <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+        <p class="TextPing">
+            <strong>FazerBlast</strong><br>
+            <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+            <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+        </p>
+      </div>
+    </div> 
+
+
+  <!-- 9 FREDDY SPACE SCAPE -->
+
+  <div class="pin-wrapper pin-sm" style="top:32.8vw; left:89.3vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#2fb873; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+
+    <!-- 10  ROXY RACEWAY -->
+
+   <div class="pin-wrapper pin-sm" style="top:7.50vw; left:79.25vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#422d2d; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+    <!-- 11 ROXY CRAZY CAR -->
+    <div class="pin-wrapper pin-sm" style="top:13.55vw; left:85.50vw;">
+     <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#23ad2a; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">sasaíacos.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- ========= SITIOS A DESTACAR ========= -->
+
+  <!-- ENFERMERIA -->
+
+    <div class="pin-wrapper pin-sm" style="top:36.7vw; left:58.2vw;">
+      <div class="pin-overlay  overMid">
+        <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+        <p class="TextPing">
+          <strong>ENFERMERIA</strong><br>
+          <span style="color:#707070; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+          <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+          <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+        </p>
+    </div>
+  </div>
+
+  <!-- CAFETERIA -->
+
+    <div class="pin-wrapper pin-sm" style="top:42.6vw; left:86.7vw;">
+      <div class="pin-overlay  overMid">
+        <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+        <p class="TextPing">
+          <strong>CAFETERIA</strong><br>
+          <span style="color:#707070; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+          <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+          <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+        </p>
+    </div>
+  </div>
+
+  <!-- ========= TITULOS ATRACCIONES ========= -->
+
+    <!-- 1 - kids cove --> 
+
+   <div class="pin-wrapper pin-sm" style="top:15.5vw; left:25.8vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/Atracciones/KidsCove.png" class="pin-img" alt="Pin 2" />
+      <p class="TextPing" style="color: orange;">Kids Cove</p>
+      <p class="TextPing">
+          <span style="font-size:1em; color:#b2d3ff;"> Apto para aventureros de: <br><strong style="color: rgb(216, 199, 199);"> 4 a 14
+años.</strong></span><br>
+      </p>
+    </div>
+  </div>
+
+    <!-- 3 - MONTY GATOR GOLF -->
+
+   <div class="pin-wrapper pin-sm" style="top:13.3vw; left:43vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/Atracciones/MontyGolf.png" class="pin-img" alt="Pin 2" />
+      <p class="TextPing" style="color: rgb(50, 214, 124);">Monty's Gator Golf</p>
+     <p class="TextPing">
+        <span style="font-size:1.1em; color:#d3d4e4;">Perfecto para grupos de 3 a 7  niños. ¡A disfrutar!</span><br>
+      </p>
+    </div>
+  </div>
+
+    <!-- 4 - SUPERTARSTAR DAYCARE PICK UP  -->
+
+   <div class="pin-wrapper pin-sm" style="top:26.3vw; left:40.3vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/Atracciones/SuperStarDayCare.png" class="pin-img" alt="Pin 2" />
+      <p class="TextPing" style="color: rgb(206, 219, 255);">SuperStar DayCare Pick Up</p>
+     <p class="TextPing">
+        <span style="color:#797979;">Perfecto para grupos de 3 a 7 niños. ¡A disfrutar!</span>
+      </p>
+    </div>
+  </div>
+  
+  <!-- 7 FAZER BLAST -->
+
+  <div class="pin-wrapper pin-sm" style="top:26.11vw; left:84.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/Atracciones/FazerBlast.png" class="pin-img" alt="Pin 2" />
+      <p class="TextPing" style="color: rgb(220, 167, 255);">Fazer Blast</p>
+      <p class="TextPing">
+          <span style="font-size:1.1em;">Apto para todo el público</span><br>
+      </p>
+    </div>
+  </div>
+  
+  <!-- 10  ROXY RACEWAY -->
+
+  <div class="pin-wrapper pin-sm" style="top:12.50vw; left:71vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#422d2d; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+  <!-- Rockstar Row -->
+
+  <div class="pin-wrapper pin-sm" style="top:15vw; left:62.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+     <p class="TextPing">
+        <strong>Monty's Gator Attack</strong><br>
+        <span style="color:#422d2d; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
+        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
+        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+      </p>
+    </div>
+  </div>
+
+</div>
+<!-- ===================================================================== -->
+
+
+
+  <!-- ========== MODALES DE LOS PINES ========== -->
+  <!-- Modal Pin 1 -->
+  <div class="modal fade" id="modalPin1" tabindex="-1" aria-labelledby="modalPin1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPin1Label">Área de Joyería</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          Aquí encontrarás aretes, anillos y collares únicos. 💍✨
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Pin 2 -->
+  <div class="modal fade" id="modalPin2" tabindex="-1" aria-labelledby="modalPin2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPin2Label">Zona de Dulces</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body">
+          ¡Dulces asiáticos, gomitas y mucho más! 🍬🍭
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------------------------------------- -->
+
+
+
+  
+  <!-- ========== FOOTER ========== -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#000000" fill-opacity="1 " d="M0,96L26.7,106.7C53.3,117,107,139,160,133.3C213.3,128,267,96,320,106.7C373.3,117,427,171,480,160C533.3,149,587,75,640,42.7C693.3,11,747,21,800,48C853.3,75,907,117,960,144C1013.3,171,1067,181,1120,170.7C1173.3,160,1227,128,1280,106.7C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+    </path>
+  </svg>
+<footer class="footer">
+    <div class="footer-container">
+      
+        <!-- Redes sociales -->
+        <div class="footer-section">
+            <h3>Síguenos en redes sociales</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61565745177160" target="_blank" class="social-icon">
+                    <i class="bi bi-facebook"></i> <!-- Icono de Facebook -->
+                </a>
+                <a href="https://www.instagram.com/tlacuachita_shop/" target="_blank" class="social-icon">
+                    <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
+                </a>
+                <a href="https://chat.whatsapp.com/EII2rDpWDYgBrB2cBvrDJq" target="_blank" class="social-icon">
+                  <i class="bi bi-whatsapp"></i> <!-- Icono de Whatsapp -->
+              </a>
+            </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p >Email: <a href="mailto:contacto@ejemplo.com">FreddyMG@gmail.com</a></p>
+            <p>Teléfono: <a href="tel:+52 56 1547 2694">+52 56 1547 2694</a></p>
+            <p>Ciudad de México, CDMX</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 FREDDY MEGA WORLD. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+  <!-- ========== SCRIPTS ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  document.querySelectorAll('.pin-img').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const targetId = pin.dataset.target;
+      const overlay = document.getElementById(targetId);
+
+      // Ocultar todos los overlays primero
+      document.querySelectorAll('.pin-overlay').forEach(o => {
+        if (o !== overlay) o.classList.remove('show');
+      });
+
+      // Alternar el overlay clicado
+      overlay.classList.toggle('show');
+    });
+  });
+
+  // Opcional: cerrar al hacer clic fuera del mapa
+  document.addEventListener('click', e => {
+    if (!e.target.closest('.map-container')) {
+      document.querySelectorAll('.pin-overlay').forEach(o => o.classList.remove('show'));
+    }
+  });
+</script>
+
+</body>
+</html>
