@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Img/Parque/IconPage.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="Personajes.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+
+
+    <title>Personajes - GlamRock Park</title>
+</head>
+
+<body> 
+  <nav class="navbar justify-content-center">
+      
+      <ul class="menu">
+          <!-- Íconos para "Entrega y Envío" -->
+          <li>
+              <a href="Mapa.html">
+                MAPA
+              </a>
+          </li>
+
+          <!-- Íconos para "Productos" -->
+          <li>
+              <a href="">
+                PERSONAJES
+              </a>
+          </li>
+          
+           <!-- LOGO  -->
+          <li>
+            <div class="logo">
+              <a href="index.html">
+                <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
+              </a>
+            </div>
+          </li>
+          
+          <li>
+            <a href="Boletos.html">
+              BOLETOS
+            </a>
+          </li>
+
+          <!-- Botón de carrito -->
+          <li class="cart">
+              <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
+                  <i class="bi bi-ticket-perforated fs-4"></i>
+                  <span class="cart-count">0</span>
+              </a>
+          </li>
+
+      </ul>
+  </nav>
+        
+    <!-- Modal de carrito vacío -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emptyCartModalLabel">¡Carrito vacío!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Actualmente no hay Tickets en tu carrito. ✨¡Agrega algunos Tickets para comprar!✨
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen de banner superior con ola SVG debajo -->
+    <div class="banner-section position-relative">
+      <!-- Imagen responsiva -->
+      <img src="Img/Parque/BANNER GLAMROCK.png" class="img-fluid w-100 banner-img" alt="Banner Parque">
+
+      <!-- Ola inferior -->
+      <svg class="wave-bottom position-absolute bottom-0 start-0 w-100" viewBox="0 0 1440 320" preserveAspectRatio="none" style="height: 100px;">
+               <path fill="#442b86" fill-opacity="1" d="M0,0L26.7,10.7C53.3,21,107,43,160,85.3C213.3,128,267,192,320,208C373.3,224,427,192,480,160C533.3,128,587,96,640,117.3C693.3,139,747,213,800,202.7C853.3,192,907,96,960,85.3C1013.3,75,1067,149,1120,170.7C1173.3,192,1227,160,1280,133.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+      </svg>
+    </div>
+
+
+
+  <div class="container">
+    <h1 class="text-center mb-5" style="color: white;">Personajes del GlamRock Park</h1>
+
+    <!-- Freddy -->
+    <div class="row character-section align-items-center" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje">
+        <img src="Img/Parque/Personajes/Freddy.png" alt="Freddy" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Freddy Fazbear</h2>
+        <p class="character-description TextoQuestrial">
+          Freddy es el alma del escenario principal, siempre listo para un show. Su presencia amigable es ideal para los más pequeños, guiándolos en el parque con su carisma.
+          <span class="location">Ubicación: Escenario Central y área de bienvenida.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Roxanne -->
+    <div class="row character-section align-items-center flex-md-row-reverse" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje-img-wrapper">
+        <img src="Img/Parque/Personajes/Roxanne.png" alt="Roxanne" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Roxanne Wolf</h2>
+        <p class="character-description TextoQuestrial">
+          Roxanne es veloz, rebelde y competitiva. Puedes encontrarla en la pista de carreras animando a los visitantes a darlo todo en la competencia.
+          <span class="location">Ubicación: Zona de Go-Karts y adrenalina extrema.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Monty -->
+    <div class="row character-section align-items-center" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje">
+        <img src="Img/Parque/Personajes/Monty.png" alt="Monty" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Montgomery Gator</h2>
+        <p class="character-description TextoQuestrial">
+          Monty es puro músculo y energía rockera. Ideal para fans del rock y desafíos físicos. Su atracción incluye juegos de fuerza e instrumentos gigantes.
+          <span class="location">Ubicación: Zona Rock Arena y gimnasio animatrónico.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Chica & Cupcake -->
+    <div class="row character-section align-items-center flex-md-row-reverse" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje">
+        <img src="Img/Parque/Personajes/ChicaCupcake.png" alt="Chica y Cupcake" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Chica y Cupcake</h2>
+        <p class="character-description TextoQuestrial">
+          Amantes de los dulces y el caos culinario, Chica y su fiel Cupcake te esperan con delicias interactivas. Ayúdales en su cocina mágica.
+          <span class="location">Ubicación: Zona de comida y juegos con repostería.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Sundrop -->
+    <div class="row character-section align-items-center" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje">
+        <img src="Img/Parque/Personajes/Sundrop.png" alt="Sundrop" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Sundrop</h2>
+        <p class="character-description TextoQuestrial">
+          El sol brillante y juguetón del parque. Sundrop es ideal para los más pequeños, con juegos educativos y actividades artísticas.
+          <span class="location">Ubicación: Guardería y zona creativa.</span>
+        </p>
+      </div>
+    </div>
+
+    <!-- Moondrop -->
+    <div class="row character-section align-items-center flex-md-row-reverse" data-aos="fade-up">
+      <div class="col-md-5 text-center personaje">
+        <img src="Img/Parque/Personajes/Moondrop.png" alt="Moondrop" class="character-img">
+      </div>
+      <div class="col-md-7">
+        <h2 class="TitulosIndxex">Moondrop</h2>
+        <p class="character-description TextoQuestrial">
+          A medida que cae la noche, Moondrop se encarga de mantener la calma. Cuentos, luces y relajación para cerrar el día con tranquilidad.
+          <span class="location">Ubicación: Zona de descanso y teatro nocturno.</span>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#000000" fill-opacity="1 " d="M0,96L26.7,106.7C53.3,117,107,139,160,133.3C213.3,128,267,96,320,106.7C373.3,117,427,171,480,160C533.3,149,587,75,640,42.7C693.3,11,747,21,800,48C853.3,75,907,117,960,144C1013.3,171,1067,181,1120,170.7C1173.3,160,1227,128,1280,106.7C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+
+    </path>
+  </svg>
+
+
+  <footer class="footer">
+      <div class="footer-container">
+        
+          <!-- Redes sociales -->
+          <div class="footer-section">
+              <h3>Síguenos en redes sociales</h3>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/profile.php?id=61565745177160" target="_blank" class="social-icon">
+                      <i class="bi bi-facebook"></i> <!-- Icono de Facebook -->
+                  </a>
+                  <a href="https://www.instagram.com/tlacuachita_shop/" target="_blank" class="social-icon">
+                      <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
+                  </a>
+                  <a href="https://chat.whatsapp.com/EII2rDpWDYgBrB2cBvrDJq" target="_blank" class="social-icon">
+                    <i class="bi bi-whatsapp"></i> <!-- Icono de Whatsapp -->
+                </a>
+              </div>
+          </div>
+
+          <!-- Información de contacto -->
+          <div class="footer-section">
+              <h3>Contacto</h3>
+              <p style="color: white;">Email: <a href="mailto:contacto@ejemplo.com">FreddyMG@gmail.com</a></p>
+              <p>Teléfono: <a href="tel:+52 56 1547 2694">+52 56 1547 2694</a></p>
+              <p>Ciudad de México, CDMX</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 GlamRock Park. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+  const magnifier = document.getElementById("magnifier");
+  const image = document.getElementById("mapZoom");
+
+  const zoom = 2; // Aumenta para más zoom
+
+  image.addEventListener("mousemove", function (e) {
+    const rect = image.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const bgX = -x * zoom + magnifier.offsetWidth / 2;
+    const bgY = -y * zoom + magnifier.offsetHeight / 2;
+
+    magnifier.style.backgroundImage = `url('${image.src}')`;
+    magnifier.style.backgroundSize = `${image.width * zoom}px ${image.height * zoom}px`;
+    magnifier.style.backgroundPosition = `${bgX}px ${bgY}px`;
+
+    magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
+    magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
+    magnifier.style.display = "block";
+  });
+
+  image.addEventListener("mouseleave", function () {
+    magnifier.style.display = "none";
+  });
+</script>
+
+ <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  </script>

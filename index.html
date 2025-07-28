@@ -13,11 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="Elementos.css">
     <link rel="stylesheet" href="index.css">
-
-
-
+    <link rel="stylesheet" href="Elementos.css">
     <title>GlamRock Park</title>
 </head>
 
@@ -26,31 +23,21 @@
       
       <ul class="menu">
           <!-- Íconos para "Entrega y Envío" -->
-          <li class="dropdown">
-              <a href="" class="dropdown-toggle">
+          <li>
+              <a href="Mapa.html">
                 MAPA
               </a>
-              <ul class="dropdown-menu">
-                  <li><a href="envios.html"><i class="bi bi-truck"></i> Envíos</a></li>
-                  <li><a href="Entregas.html"><i class="bi bi-box2-heart-fill"></i> Entrega</a></li>
-              </ul>
           </li>
 
           <!-- Íconos para "Productos" -->
-          <li class="dropdown">
-              <a href="" class="dropdown-toggle">
-                ATRACCIONES
+          <li>
+              <a href="">
+                PERSONAJES
               </a>
-              <ul class="dropdown-menu">
-                  <li><a href="bolsas-1.html"><i class="bi bi-bag-heart-fill"></i> Bolsas</a></li>
-                  <li><a href="Maquillaje.html"><i class="bi bi-palette"></i> Maquillaje</a></li>
-                  <li><a href="joyeria.html"><i class="bi bi-gem"></i> Joyeria</a></li>
-                  <li><a href="exclusivos.html"><i class="bi bi-gift-fill"></i> Exclusivos</a></li>
-                  <li><a href="dulces-1.html"><i class="bi bi-hypnotize"></i> Dulces</a></li>
-              </ul>
           </li>
           
-          <li class="dropdown">
+           <!-- LOGO  -->
+          <li>
             <div class="logo">
               <a href="index.html">
                 <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
@@ -58,8 +45,12 @@
             </div>
           </li>
           
-          <li><a href="contactanos.html"> Contacto</a></li>
-          
+          <li>
+            <a href="Boletos.html">
+              BOLETOS
+            </a>
+          </li>
+
           <!-- Botón de carrito -->
           <li class="cart">
               <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
@@ -67,6 +58,7 @@
                   <span class="cart-count">0</span>
               </a>
           </li>
+
       </ul>
   </nav>
         
@@ -112,7 +104,7 @@
           </p>
         </div>
         <div class="col-md-6">
-          <img src="Img/Parque/Atracciones/GOLF.jpg" alt="Atracciones del parque" class="img-fluid rounded">
+          <img  src="Img/Parque/Atracciones/kidscove_Atracction.png" alt="Atracciones del parque" class="img-fluid rounded">
         </div>
       </div>
     </section>
@@ -122,13 +114,13 @@
   <h2 class="text-center mb-4" style="color: white;">Galería del Parque</h2>
   <div class="row g-3">
     <div class="col-md-4">
-      <img src="Img/Parque/Atracciones/Gator_Golf.webp" class="img-fluid rounded" alt="Foto 1 del parque">
+      <img src="Img/Parque/Atracciones/roxy raceway_Atracttion.png" class="img-fluid rounded fixed-image" alt="Foto 1 del parque">
     </div>
     <div class="col-md-4">
-      <img src="Img/Parque/Atracciones/RoxanneGoKartTrack.webp" class="img-fluid rounded" alt="Foto 2 del parque">
+      <img src="Img/Parque/Atracciones/monty_gatorAttack_Atraction.png" class="img-fluid rounded fixed-image" alt="Foto 2 del parque">
     </div>
     <div class="col-md-4">
-      <img src="Img/Parque/Atracciones/MontyMontaña.webp" class="img-fluid rounded" alt="Foto 3 del parque">
+      <img src="Img/Parque/Atracciones/CupAtracttion.jpg" class="img-fluid rounded fixed-image" alt="Foto 3 del parque">
     </div>
   </div>
 </section>
@@ -172,7 +164,7 @@
 <section class="container my-5">
   <div class="row align-items-center">
     <div class="col-md-6">
-      <h2 class="fw-bold mb-4" style="color: white;">Planea tu visita</h2>
+      <h2 class="fw-bold mb-4 TitulosIndxex" style="color: white;">Planea tu visita</h2>
       <p class="TextoQuestrial">
         ¿Cumpleaños? ¿Fiesta escolar? ¿Día inolvidable en familia? Glamrock Park tiene todo para hacer de tu visita una experiencia épica. Reserva áreas temáticas, paquetes especiales para grupos y más.
       </p>
@@ -184,7 +176,7 @@
       </ul>
     </div>
     <div class="col-md-6">
-      <img src="Img/Parque/Atracciones/SuperStarDayCare.png" class="img-fluid rounded" alt="Fiesta en el parque">
+      <img src="Img/Parque//Personajes/SUNMOON.png" class="img-fluid rounded" alt="Fiesta en el parque">
     </div>
   </div>
 </section>
@@ -205,32 +197,6 @@
         Tu navegador no soporta el video.
       </video>
     </div>
-  </div>
-</section>
-
-
-
-<!-- SECCIÓN DE IMAGEN CON ZOOM -->
-<section class="container my-5 ">
-  <div class="row">
-    <!-- 🗺️ Columna: Mapa con zoom al mouse -->
-    <div class="col-md-7">
-      <div class="magnifier-container">
-        <img id="mapZoom" src="Img/Parque/Mapa.jpg" alt="Mapa" class="img-fluid map-img">
-        <div id="magnifier"></div>
-      </div>
-      <p class="text-center mt-3">
-        <a href="mapa.html" class="btn btn-outline-primary">Ir al mapa completo</a>
-      </p>
-    </div>
-
-    <!-- 🧍‍♂️ Columna: Personaje -->
-    <div class="col-md-5 text-center">
-      <img src="Img/Parque/Fredy_caminando.png" class="img-fluid" alt="Personaje">
-      <audio id="miAudio" src="/Img/Parque/Sounds/Nariz.mp3"></audio>
-      <button onclick="document.getElementById('miAudio').play()">Reproducir sonido</button>
-    </div>
-
   </div>
 </section>
 
@@ -269,7 +235,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2025 FREDDY MEGA WORLD. Todos los derechos reservados.</p>
+        <p>&copy; 2025 GlamRock Park. Todos los derechos reservados.</p>
     </div>
 </footer>
 

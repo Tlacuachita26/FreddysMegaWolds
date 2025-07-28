@@ -6,6 +6,10 @@
     font-style: normal;
 }
 
+.selectedNav {
+    color: #0CC0DF;
+}
+
 .TitulosIndxex {
     color: white;
     letter-spacing: 5px; /* Ajusta el valor según lo que necesites */
@@ -24,3 +28,10 @@
 }
 /* Baner superior */
 
+/* Tamaño fijo de Imagenes */
+.fixed-image {
+  width: 500px;
+  height: 300px;        /* o el tamaño que tú necesites */
+  object-fit: cover;   /* o usa 'contain' si prefieres que toda la imagen se vea */
+  border-radius: 12px; /* opcional: redondea esquinas */
+}

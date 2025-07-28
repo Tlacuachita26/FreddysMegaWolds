@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="Img/Parque/IconPage.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Boletos.css">
+
+    <title>GlamRock Park</title>
+</head>
+
+<body> 
+  <nav class="navbar justify-content-center">
+      
+      <ul class="menu">
+          <!-- Íconos para "Entrega y Envío" -->
+          <li class="dropdown">
+              <a href="Mapa.html">
+                MAPA
+              </a>
+          </li>
+
+          <!-- Íconos para "Productos" -->
+          <li class="dropdown">
+              <a href="Personajes.html">
+                PERSONAJES
+              </a>
+          </li>
+          
+          <li class="dropdown">
+            <div class="logo">
+              <a href="index.html">
+                <img src="Img/Parque/LogoLetras.png" alt="Logotipo" />
+              </a>
+            </div>
+          </li>
+          
+          <li><a href="Boletos.html">Boletos</a></li>
+          
+          <!-- Botón de carrito -->
+          <li class="cart">
+              <a href="" data-bs-toggle="modal" data-bs-target="#emptyCartModal">
+                  <i class="bi bi-ticket-perforated fs-4"></i>
+                  <span class="cart-count">0</span>
+              </a>
+          </li>
+      </ul>
+  </nav>
+        
+    <!-- Modal de carrito vacío -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emptyCartModalLabel">¡Carrito vacío!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Actualmente no hay Tickets en tu carrito. ✨¡Agrega algunos Tickets para comprar!✨
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Imagen de   superior con ola SVG debajo -->
+    <div class="banner-section position-relative">
+      <!-- Imagen responsiva -->
+      <img src="Img/Parque/Personajes/AnimatedRockEatPartyPlay.webp" class="img-fluid w-100 banner-img" alt="Banner Parque">
+
+      <!-- Ola inferior -->
+      <svg class="wave-bottom position-absolute bottom-0 start-0 w-100" viewBox="0 0 1440 320" preserveAspectRatio="none" style="height: 100px;">
+               <path fill="#442b86" fill-opacity="1" d="M0,0L26.7,10.7C53.3,21,107,43,160,85.3C213.3,128,267,192,320,208C373.3,224,427,192,480,160C533.3,128,587,96,640,117.3C693.3,139,747,213,800,202.7C853.3,192,907,96,960,85.3C1013.3,75,1067,149,1120,170.7C1173.3,192,1227,160,1280,133.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
+      </svg>
+    </div>
+
+    <header>🎟️ Boletos Freddy's MegaWolds</header>
+
+  <section class="ticket-section">
+
+    <img src="/Img/Parque/Chica.webp" alt="Chica" class="character-image left-img">
+    <img src="/Img/Parque/Monty.webp" alt="Monty" class="character-image right-img">
+
+    <div class="ticket-container">
+      <h1 class="ticket-title">Boletos</h1>
+
+      <div class="ticket">
+        <img src="/Img/Parque/Tickets/General.webp" alt="Versión General" style="width: 100%; max-width: 300px; display: block; margin: 0 auto 1rem; border-radius: 8px;">
+        <h3>🎫 Versión General</h3>
+        <p>Este acceso permite la entrada general a todo el parque, sin embargo, está limitado en privilegios: no permite filas rápidas ni generación de puntos canjeables. Es ideal para disfrutar todas las áreas generales sin preferencias especiales.</p>
+      </div>
+
+      <div class="ticket">
+        <img src="/Img/Parque/Tickets/Faztpass.webp" alt="Versión Faztpass" style="width: 100%; max-width: 300px; display: block; margin: 0 auto 1rem; border-radius: 8px;">
+        <h3>⏱️ Versión Faztpass (Pulsera Inteligente Faz-Watch)</h3>
+        <p>Accede al parque con prioridad gracias al Faz-Watch, una pulsera inteligente que lleva tu cuenta, tarjeta de crédito y sistema de recompensas integrado. Con ella puedes entrar y salir del parque con flexibilidad, hacer compras directamente desde tu muñeca, ganar puntos por cada compra, y disfrutar de colas rápidas y espectáculos exclusivos. ¡Es la experiencia completa al máximo nivel!</p>
+      </div>
+
+    </div>
+  </section>
+
+    <!-- Boleto Faztpass -->
+    <div class="ticket-card">
+      <div class="ticket-title">Faztpass - Faz-Watch 🕹️</div>
+      <div class="ticket-description">
+        Pulsera inteligente con acceso premium.<br><br>
+        • Prioridad en atracciones<br>
+        • Entradas/salidas flexibles<br>
+        • Pagos desde tu muñeca<br>
+        • Gana puntos y recompensas<br>
+        • Acceso a colas rápidas
+      </div>
+      <button class="button" onclick="mostrarInfo('faztpass')">Ver más</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#000000" fill-opacity="1 " d="M0,96L26.7,106.7C53.3,117,107,139,160,133.3C213.3,128,267,96,320,106.7C373.3,117,427,171,480,160C533.3,149,587,75,640,42.7C693.3,11,747,21,800,48C853.3,75,907,117,960,144C1013.3,171,1067,181,1120,170.7C1173.3,160,1227,128,1280,106.7C1333.3,85,1387,75,1413,69.3L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z">
+
+  </path>
+</svg>
+
+
+<footer class="footer">
+    <div class="footer-container">
+      
+        <!-- Redes sociales -->
+        <div class="footer-section">
+            <h3>Síguenos en redes sociales</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=61565745177160" target="_blank" class="social-icon">
+                    <i class="bi bi-facebook"></i> <!-- Icono de Facebook -->
+                </a>
+                <a href="https://www.instagram.com/tlacuachita_shop/" target="_blank" class="social-icon">
+                    <i class="bi bi-instagram"></i> <!-- Icono de Instagram -->
+                </a>
+                <a href="https://chat.whatsapp.com/EII2rDpWDYgBrB2cBvrDJq" target="_blank" class="social-icon">
+                  <i class="bi bi-whatsapp"></i> <!-- Icono de Whatsapp -->
+              </a>
+            </div>
+        </div>
+
+        <!-- Información de contacto -->
+        <div class="footer-section">
+            <h3>Contacto</h3>
+            <p style="color: white;">Email: <a href="mailto:contacto@ejemplo.com">FreddyMG@gmail.com</a></p>
+            <p>Teléfono: <a href="tel:+52 56 1547 2694">+52 56 1547 2694</a></p>
+            <p>Ciudad de México, CDMX</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 GlamRock Park. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+<script>
+  const magnifier = document.getElementById("magnifier");
+  const image = document.getElementById("mapZoom");
+
+  const zoom = 2; // Aumenta para más zoom
+
+  image.addEventListener("mousemove", function (e) {
+    const rect = image.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    const bgX = -x * zoom + magnifier.offsetWidth / 2;
+    const bgY = -y * zoom + magnifier.offsetHeight / 2;
+
+    magnifier.style.backgroundImage = `url('${image.src}')`;
+    magnifier.style.backgroundSize = `${image.width * zoom}px ${image.height * zoom}px`;
+    magnifier.style.backgroundPosition = `${bgX}px ${bgY}px`;
+
+    magnifier.style.left = `${x - magnifier.offsetWidth / 2}px`;
+    magnifier.style.top = `${y - magnifier.offsetHeight / 2}px`;
+    magnifier.style.display = "block";
+  });
+
+  image.addEventListener("mouseleave", function () {
+    magnifier.style.display = "none";
+  });
+</script>

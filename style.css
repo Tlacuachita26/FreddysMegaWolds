@@ -24,6 +24,10 @@ body {
     padding: 0.5rem 1rem;
 }
 
+.selectedNav {
+    color: #0CC0DF;
+}
+
 .logo img {
     height: 50px;
     width: auto;
@@ -49,7 +53,7 @@ body {
 }
 
 .menu a:hover {
-    color: #0CC1DF; /* Cambiar color del texto al pasar el ratón */
+    color: #E62126; /* Cambiar color del texto al pasar el ratón */
     transition: all 0.3s ease; 
 }
 
@@ -474,7 +478,7 @@ body {
         height: 30px;
     }
 
-    
+
 
 
 

@@ -1,0 +1,47 @@
+.personaje img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.personaje-img-wrapper {
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personaje-img-wrapper img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.character-section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #ffffff1a;
+}
+
+.character-img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 20px;
+}
+
+.character-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.location {
+    font-weight: bold;
+    color: #ffc107;
+}
+
+div h2 {
+    color: #ff4081;
+    font-weight: 700;
+}
