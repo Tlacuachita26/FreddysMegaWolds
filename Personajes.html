@@ -12,9 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Parkinsans:wght@300..800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="Personajes.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="index.css">
 
 
     <title>Personajes - GlamRock Park</title>
@@ -24,16 +24,16 @@
   <nav class="navbar justify-content-center">
       
       <ul class="menu">
-          <!-- Íconos para "Entrega y Envío" -->
+          <!-- Mapa -->
           <li>
               <a href="Mapa.html">
                 MAPA
               </a>
           </li>
 
-          <!-- Íconos para "Productos" -->
-          <li>
-              <a href="">
+          <!-- Íconos para "Personajes" -->
+          <li class="selectedNav">
+              <a href="Personajes.html" class="selectedNav">
                 PERSONAJES
               </a>
           </li>
@@ -47,6 +47,7 @@
             </div>
           </li>
           
+          <!-- Boletos-->
           <li>
             <a href="Boletos.html">
               BOLETOS
@@ -82,25 +83,13 @@
         </div>
     </div>
 
-    <!-- Imagen de banner superior con ola SVG debajo -->
-    <div class="banner-section position-relative">
-      <!-- Imagen responsiva -->
-      <img src="Img/Parque/BANNER GLAMROCK.png" class="img-fluid w-100 banner-img" alt="Banner Parque">
-
-      <!-- Ola inferior -->
-      <svg class="wave-bottom position-absolute bottom-0 start-0 w-100" viewBox="0 0 1440 320" preserveAspectRatio="none" style="height: 100px;">
-               <path fill="#442b86" fill-opacity="1" d="M0,0L26.7,10.7C53.3,21,107,43,160,85.3C213.3,128,267,192,320,208C373.3,224,427,192,480,160C533.3,128,587,96,640,117.3C693.3,139,747,213,800,202.7C853.3,192,907,96,960,85.3C1013.3,75,1067,149,1120,170.7C1173.3,192,1227,160,1280,133.3C1333.3,107,1387,85,1413,74.7L1440,64L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path>
-      </svg>
-    </div>
-
-
 
   <div class="container">
     <h1 class="text-center mb-5" style="color: white;">Personajes del GlamRock Park</h1>
 
     <!-- Freddy -->
     <div class="row character-section align-items-center" data-aos="fade-up">
-      <div class="col-md-5 text-center personaje">
+      <div class="col-md-5 text-center personaje-img-wrapper">
         <img src="Img/Parque/Personajes/Freddy.png" alt="Freddy" class="character-img">
       </div>
       <div class="col-md-7">
@@ -128,7 +117,7 @@
 
     <!-- Monty -->
     <div class="row character-section align-items-center" data-aos="fade-up">
-      <div class="col-md-5 text-center personaje">
+      <div class="col-md-5 text-center personaje-img-wrapper">
         <img src="Img/Parque/Personajes/Monty.png" alt="Monty" class="character-img">
       </div>
       <div class="col-md-7">
@@ -142,7 +131,7 @@
 
     <!-- Chica & Cupcake -->
     <div class="row character-section align-items-center flex-md-row-reverse" data-aos="fade-up">
-      <div class="col-md-5 text-center personaje">
+      <div class="col-md-5 text-center personaje-img-wrapper">
         <img src="Img/Parque/Personajes/ChicaCupcake.png" alt="Chica y Cupcake" class="character-img">
       </div>
       <div class="col-md-7">
@@ -156,7 +145,7 @@
 
     <!-- Sundrop -->
     <div class="row character-section align-items-center" data-aos="fade-up">
-      <div class="col-md-5 text-center personaje">
+      <div class="col-md-5 text-center personaje-img-wrapper">
         <img src="Img/Parque/Personajes/Sundrop.png" alt="Sundrop" class="character-img">
       </div>
       <div class="col-md-7">
@@ -170,7 +159,7 @@
 
     <!-- Moondrop -->
     <div class="row character-section align-items-center flex-md-row-reverse" data-aos="fade-up">
-      <div class="col-md-5 text-center personaje">
+      <div class="col-md-5 text-center personaje-img-wrapper">
         <img src="Img/Parque/Personajes/Moondrop.png" alt="Moondrop" class="character-img">
       </div>
       <div class="col-md-7">

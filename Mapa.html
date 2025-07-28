@@ -17,6 +17,7 @@
   <!-- Tu hoja de estilos -->
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Mapa.css">
+  <link rel="stylesheet" href="index.css">
 
 
   <title>Freddys MegaWold</title>
@@ -30,7 +31,7 @@
       <ul class="menu">
           <!-- Íconos para "Entrega y Envío" -->
           <li>
-              <a href="Mapa.html">
+              <a href="Mapa.html" class="selectedNav">
                 MAPA
               </a>
           </li>
@@ -67,7 +68,23 @@
 
       </ul>
   </nav>
-
+ <!-- Modal de carrito vacío -->
+    <div class="modal fade" id="emptyCartModal" tabindex="-1" aria-labelledby="emptyCartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="emptyCartModalLabel">¡Carrito vacío!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body TextoQuestrial">
+                    Actualmente no hay Tickets en tu carrito. ✨¡Agrega algunos Tickets para comprar!✨
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
  
 <!-- =====================  MAPA INTERACTIVO (hover)  ===================== -->
 <div class="map-container">
@@ -141,9 +158,9 @@
 
    <div class="pin-wrapper pin-sm" style="top:12vw; left:24.8vw;">
     <div class="pin-overlay  overMid">
-      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <img src="/Img/Parque/Personajes/SBFoxyPlush.webp" class="pin-img" alt="Pin 2" />
       <p class="TextPing">
-        <strong>Barco Pirata de Foxy</strong><br><br>
+        <strong style="color: orange;" >Barco Pirata de Foxy</strong><br><br>
         <span style="color:#fff7f7;">
           ¡La cueva pirata es el refugio
           donde Foxy y su tripulación se
@@ -161,9 +178,19 @@
       <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
      <p class="TextPing">
         <strong></strong><br>
-        <span style="color:#4c00ff; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
-        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
-        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
+        <span style="color:#85dcff; font-weight:bold;">¡Disfruta la vista antes de la caída!</span><br>
+        <span style="color:#fff7f7;">
+          Súbete a esta atracción que te eleva 
+          por encima del parque para luego 
+          descender con giros emocionantes.
+        </span><br>
+         <span style="font-size:1em; color:#b2d3ff;"> 
+            Apto para aventureros de: <br>
+            <strong style="color: rgb(216, 199, 199);"> 
+            10 años en adelante
+          </strong>
+        </span><br>
+        <span style="color:#ff7676;">No apto para personas con vértigo o problemas cardíacos.</span>
       </p>
     </div>
   </div>  
@@ -171,11 +198,11 @@
     <!-- 3 - MONTY GATOR GOLF -->
 
    <div class="pin-wrapper pin-sm" style="top:10.3vw; left:44vw;">
-    <div class="pin-overlay  overMid">
-      <!-- <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" /> -->
+    <div class="pin-overlay overMid">
+      <img src="/Img/Parque/Personajes/MontyGolf.png" class="pin-img" alt="Pin 2" /> 
      <p class="TextPing">
       <!--  <strong>Monty's Gator Attack</strong><br>  -->
-        <span style="color:#b2b3ac; font-weight:bold;">
+        <span style="color:white; font-weight:bold;">
           Un golf super divertido para los
           más diestros, ¡disfruta de las
           traviesas trampas de arena!
@@ -191,15 +218,17 @@
 
    <div class="pin-wrapper pin-sm" style="top:20.1vw; left:31.5vw;">
     <div class="pin-overlay  overMid">
-      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <img src="/Img/Parque/Personajes/MoondropIcon.webp" class="pin-img" alt="Pin 2" />
      <p class="TextPing">
-        <span style="color:#ff006a; font-weight:bold;">
+        <span style="color:#ffffff; font-weight:bold;">
           ¡Moondrop y Sundrop están listos
           para cuidar y entretener a los mini
-          rockstars con un día estelar!
+          rockstars con un día estelar! <br>
+          Relájate y pásala bomba en el
+          parque mientras los peques se
+          divierten en un ambiente súper
+          vigilado y lleno de diversión.
         </span><br>
-        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
-        <span style="color:#797979;">No apto para personas sensibles o con problemas cardíacos.</span>
       </p>
     </div>
   </div>
@@ -208,12 +237,17 @@
 
    <div class="pin-wrapper pin-sm" style="top:18.5vw; left:42.5vw;">
     <div class="pin-overlay  overMid">
-      <img src="/Img/Parque/PingMap/PartyPass.webp" class="pin-img" alt="Pin 2" />
+      <img src="/Img/" class="pin-img" alt="Pin 2" />
      <p class="TextPing">
-        <strong>Monty's Gator Attack</strong><br>
-        <span style="color:#7a183e; font-weight:bold;">¡Escapa de las garras de Monty a toda velocidad!</span><br>
-        <span style="font-size:1.1em;">Edad recomendada: <strong>10 años en adelante</strong></span><br>
-        <span style="color:#1395d1;">No apto para personas sensibles o con problemas cardíacos.</span>
+        <p class="TextPing">
+        <span style="color:#ffffff; font-weight:bold;">
+          ¡Escapa de las garras de Monty a toda velocidad!<br>
+          Vive la adrenalina en esta montaña rusa 
+          que te eleva a las alturas del parque con 
+          vistas impresionantes antes de lanzarte en descensos 
+          vertiginosos y giros inesperados.
+        </span><br>
+      </p>
       </p>
     </div>
   </div>
@@ -348,8 +382,8 @@
       <img src="/Img/Parque/Atracciones/KidsCove.png" class="pin-img" alt="Pin 2" />
       <p class="TextPing" style="color: orange;">Kids Cove</p>
       <p class="TextPing">
-          <span style="font-size:1em; color:#b2d3ff;"> Apto para aventureros de: <br><strong style="color: rgb(216, 199, 199);"> 4 a 14
-años.</strong></span><br>
+          <span style="font-size:1em; color:#b2d3ff;"> Apto para aventureros de: <br><strong style="color: rgb(255, 255, 255);"> 6 años en adelante</strong></span><br>
+          </strong></span><br>
       </p>
     </div>
   </div>
@@ -361,23 +395,36 @@ años.</strong></span><br>
       <img src="/Img/Parque/Atracciones/MontyGolf.png" class="pin-img" alt="Pin 2" />
       <p class="TextPing" style="color: rgb(50, 214, 124);">Monty's Gator Golf</p>
      <p class="TextPing">
-        <span style="font-size:1.1em; color:#d3d4e4;">Perfecto para grupos de 3 a 7  niños. ¡A disfrutar!</span><br>
+        <span style="font-size:1em; color:#b2d3ff;"> Apto para aventureros de: <br><strong style="color: rgb(255, 255, 255);"> 4 a 14años.</strong></span><br>
       </p>
     </div>
   </div>
 
     <!-- 4 - SUPERTARSTAR DAYCARE PICK UP  -->
 
-   <div class="pin-wrapper pin-sm" style="top:26.3vw; left:40.3vw;">
-    <div class="pin-overlay  overMid">
-      <img src="/Img/Parque/Atracciones/SuperStarDayCare.png" class="pin-img" alt="Pin 2" />
+ 
+    <div class="pin-wrapper pin-sm" style="top:26.3vw; left:40.3vw;">
+      <div class="pin-overlay  overMid">
+        <img src="/Img/Parque/Atracciones/SuperStarDayCare.png" class="pin-img" alt="Pin 2" />
       <p class="TextPing" style="color: rgb(206, 219, 255);">SuperStar DayCare Pick Up</p>
+      <p class="TextPing">
+          <span style="color:#b2d3ff;">Perfecto para: <br><strong style="color: rgb(255, 255, 255);">   grupos de 3 a 7 niños. ¡A disfrutar!</strong></span><br>
+      </p>
+      </div>
+    </div>
+  
+
+      <!-- 5 - MONTY GATOR ATTACK  -->
+
+    <div class="pin-wrapper pin-sm" style="top:20.8vw; left:45.5vw;">
+    <div class="pin-overlay  overMid">
+      <img src="/Img/Parque/Atracciones/MontyGatorAttack.png" class="pin-img" alt="Pin 2" />
+      <p class="TextPing" style="color: rgb(50, 214, 124);">Monty's Gator Attack</p>
      <p class="TextPing">
-        <span style="color:#797979;">Perfecto para grupos de 3 a 7 niños. ¡A disfrutar!</span>
+        <span style="color:#b2d3ff;">Perfecto para grupos de 3 a 7 niños. ¡A disfrutar!</span>
       </p>
     </div>
   </div>
-  
   <!-- 7 FAZER BLAST -->
 
   <div class="pin-wrapper pin-sm" style="top:26.11vw; left:84.5vw;">
